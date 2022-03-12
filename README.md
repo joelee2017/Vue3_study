@@ -2,24 +2,24 @@
 
 ### 第2章 vue 的 ssr原理
 
-- 單元 1 - 什麼是 spa ? 什麼是 ssr?
+- #### 單元 1 - 什麼是 spa ? 什麼是 ssr?
 
   - spa - 的 dom 元素都是由 js Render而成的，等 html 生成後，在讀 js ，具有讀取速度上的優勢，爬蟲一開始不會讀取 js 中的 html ，所以在 seo 上略低，但 spa 好處在更新速度快，譬後台網站或活動網站。
 
   - ssr - Server side Render 好在丟出， 具有 seo 上有略高的優勢，適合平台網站及需 seo 網站 上。
 
-- 單元 2 - 什麼是 Nuxt ?
+- #### 單元 2 - 什麼是 Nuxt ?
 
   - 為了讓 vue 更容易開發才誕生的
 
-- 單元 3 - Nuxt SSR 原理解析
+- #### 單元 3 - Nuxt SSR 原理解析
 
   - Vue Cli 在 bundle 時只會產生一份， Nuxt 會 bundle 兩份檔案 ， Client (User 看的內容) 、 Server (專門餵給搜尋引擎爬蟲)
   - 過去的網站都是採用後端 Render 方式，跟 Nuxt 有明顯的差異。
 
 ### 第 3 章 開始使用 Nuxt 吧
 
-- 單元 1 - Nuxt 安裝及設定
+- #### 單元 1 - Nuxt 安裝及設定
 
   ```powershell
   npx create-nuxt-app <project-name>
@@ -60,7 +60,7 @@
           npm run start
   ```
 
-- 單元 3 - Nuxt 架構解析 - layouts & assets
+- #### 單元 3 - Nuxt 架構解析 - layouts (新版的 Layout 資料夾在 .nuxt  下) & assets
 
   ```json
    "scripts": {
@@ -97,5 +97,11 @@
     Compiled successfully in 13.16s
   ```
 
-- 新版的 Layout 資料夾在 .nuxt  下
+  - 新版的 Layout 資料夾在 .nuxt  下
+
+- #### 單元 3 - Nuxt 架構解析 - static & assets (新版的需自行建立)
+
+  - 兩者皆放靜態檔案譬圖片
+  - 所有經過 Nuxt 編繹打包過後的檔案都要放在 assels 譬套件
+  - 不需要  Nuxt 編繹打包過後的檔案都要放在 static 譬圖片
 
