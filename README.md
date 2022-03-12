@@ -99,9 +99,24 @@
 
   - 新版的 Layout 資料夾在 .nuxt  下
 
-- #### 單元 3 - Nuxt 架構解析 - static & assets (新版的需自行建立)
+- #### 單元 4 - Nuxt 架構解析 - static & assets (新版的需自行建立)
 
   - 兩者皆放靜態檔案譬圖片
   - 所有經過 Nuxt 編繹打包過後的檔案都要放在 assels 譬套件
   - 不需要  Nuxt 編繹打包過後的檔案都要放在 static 譬圖片
+
+- #### 單元 5 - Nuxt 架構解析 - stroe & plugins & middleware 
+
+  - middleware 中間層
+  - plugins  自行撰寫套件存放區
+  - stroe  Vuex的部份
+  - 各資料夾用途說明
+    - assets：需要被打包的資源，例如你的 images 等等
+    - components：頁面的最小單位組件
+    - layouts：頁面共用的版型，例如 header、 footer
+    - middleware：進入頁面前需要做的中間層
+    - pages：頁面放的地方，一個 .vue 就是一個頁面
+    - plugins：自定義的nuxt套件的資料夾
+    - static：靜態資源，不需要被打包的資源
+    - store： Vuex所放的資料夾
 
