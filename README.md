@@ -120,3 +120,7 @@
     - static：靜態資源，不需要被打包的資源
     - store： Vuex所放的資料夾
 
+- #### 單元 6 - Nuxt 的生命週期表
+
+  - Nuxt Lifecycle ： https://nuxtjs.org/docs/concepts/nuxt-lifecycle
+
