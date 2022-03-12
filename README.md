@@ -97,4 +97,5 @@
     Compiled successfully in 13.16s
   ```
 
-  
+- 新版的 Layout 資料夾在 .nuxt  下
+
